@@ -12,9 +12,8 @@ app.use(morgan(morganSetting))
 app.use(helmet())
 app.use(cors())
 
-app.get('/', (req, res) => {
-  res.status(200).send("Hello, world!");
-})
+
+
 
 app.use((error, req, res, next) => {
   let response;
